@@ -32,6 +32,27 @@
             </nav>
         </header>
         <main>
+            <div class="recherche-and-filtres">
+                <div class="recherche-title">
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+                </div>
+                <form method="get" action="">
+                    <label for="localisation">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    </label>
+                    <input 
+                        type="search" 
+                        name="localisation" 
+                        id="localisation" 
+                        placeholder="Marseille, France"
+                        aria-label="Rechercher un lieu où vous souhaitez être hébergé">
+                    <button>
+                        <span class="boutton-rechercher">Rechercher</span>
+                        <span class="boutton-loupe"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </button>
+                </form>
+            </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="hebergements">
 
