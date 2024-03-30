@@ -30,6 +30,51 @@ a {
     text-decoration: none;
 }
 
+ul li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+}
+
+.logo {
+    height: auto;
+    width: 150px;
+}
+
+.logo img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 0px;
+}
+
+.lien-hebergements a, 
+.lien-activites a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.lien-hebergements a:hover, 
+.lien-activites a:hover {
+    border-top: solid #0065FC 2px;
+}
+
+.lien-hebergements {
+margin-right: 5em;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -120,7 +165,6 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
 
 
 
