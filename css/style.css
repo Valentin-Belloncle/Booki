@@ -112,13 +112,13 @@ nav ul {
     margin-top: 8px;
 }
 
+/****** Recherches ***********/
 form {
     display: flex;
     margin-top: 35px;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     width: fit-content;
-    margin-bottom: 30px;
 }
 
 label {
@@ -151,13 +151,47 @@ button {
 }
 
 .bouton-rechercher {
-    color: #ffff;
+    color: #ffffff;
     font-size: 18px;
     font-weight: bold;
 }
 
 .bouton-loupe {
     display: none;
+}
+/****** Filtres ***********/
+.filtres {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;   
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0
+}
+
+.filtres a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    border: #D9D9D9 solid 2px;
+    border-radius: 25px;
+    height: 46px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.filtres a:hover {
+    background-color: #DEEBFF;
+}
+
+a i {
+    font-size: 20px;
 }
 
 /****** Hebergements And Populaires ***********/
