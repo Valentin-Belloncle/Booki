@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -21,7 +22,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0px 50px;
     box-sizing: border-box;
 }
 
@@ -70,22 +71,14 @@ margin-right: 5em;
 header {
     display: flex;
     justify-content: space-between;
-    height: 5em;
 }
 
 .logo {
-    height: auto;
-    width: 150px;
+    padding: 25px 32px;
 }
 
 .logo img {
-    width: 40%;
-    height: 100%;
     object-fit: contain;
-}
-
-nav {
-    display: flex;
 }
 
 nav ul {
@@ -93,17 +86,19 @@ nav ul {
     margin-top: 0px;
 }
 
-.lien-hebergements a, 
-.lien-activites a {
+ul a, 
+ul a {
     display: inline-block;
     padding-top: 20px;
+    border-top : 2px solid white;
 }
 
 .lien-hebergements a:hover, 
 .lien-activites a:hover {
-    border-top: solid #0065FC 2px;
+    border-top: 2px solid #0065FC;
     color: #0065FC;
 }
+
 /****** Recherches And Filtres ***********/
 .recherche-and-filtres {
     margin-top: 25px;
@@ -122,7 +117,8 @@ form {
 }
 
 label {
-    width: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
@@ -140,7 +136,6 @@ input {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    opacity: 1;
 }
 
 button {
@@ -203,10 +198,11 @@ a i {
     gap: 10px;
 }
 
-.info i {
+.info div {
     border :#D9D9D9 solid 1px;
     padding: 12px 10px;
     border-radius: 100px;
+    display: inherit;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -256,8 +252,7 @@ a i {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
-}²
+}
 
 .populaires-cards .card-title {
     margin-top: 10px;
