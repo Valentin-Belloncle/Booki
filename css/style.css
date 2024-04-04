@@ -164,7 +164,8 @@ button {
     display: flex;
     align-items: center;
     margin-top: 30px;
-    gap: 15px;   
+    gap: 15px;
+    flex-wrap: wrap;   
 }
 
 h3 {
@@ -192,6 +193,20 @@ h3 {
 
 a i {
     font-size: 20px;
+}
+
+/****** Info ***********/
+.info {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 10px;
+}
+
+.info i {
+    border :#D9D9D9 solid 1px;
+    padding: 12px 10px;
+    border-radius: 100px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -242,7 +257,7 @@ a i {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-}
+}²
 
 .populaires-cards .card-title {
     margin-top: 10px;
@@ -256,8 +271,6 @@ a i {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
