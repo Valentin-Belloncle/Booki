@@ -24,6 +24,16 @@ body {
     max-width: 1440px;
     padding: 0px 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 a {
@@ -74,7 +84,7 @@ header {
 }
 
 .logo {
-    padding: 25px 32px;
+    padding: 25px 32px 25px 0;
 }
 
 .logo img {
@@ -101,16 +111,19 @@ nav ul a {
 
 /****** Recherches And Filtres ***********/
 .recherche-and-filtres {
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
+
 .subtitle {
     margin-top: 8px;
+    margin-bottom: 0;
 }
 
 /****** Recherches ***********/
 form {
     display: flex;
-    margin-top: 35px;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     width: fit-content;
@@ -126,9 +139,9 @@ label {
     background-color: #F2F2F2;
 }
 
-label i {
+.fa-location-dot {
     font-size : 18px;
-    color: black !important;
+    color: black;
 }
 
 input {
@@ -136,10 +149,10 @@ input {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    width: 195px !important;
+    width: 195px;
 }
 
-button {
+form button {
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     border: none ;
@@ -160,7 +173,6 @@ button {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-top: 30px;
 }
 
 .lien-filtres {
@@ -174,25 +186,22 @@ h3 {
     margin: 0
 }
 
-.filtres a {
+.filtres button {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     font-size: 17px;
     font-weight: bold;
-    border: #D9D9D9 solid 2px;
+    border: #D9D9D9 solid 3px;
     border-radius: 25px;
     height: 46px;
     padding-left: 19px;
     padding-right: 19px;
+    background-color: #ffffff;
 }
 
-.filtres a:hover {
-    background-color: #DEEBFF;
-}
-
-.filtre-pepites {
+.filtres button:hover {
     background-color: #DEEBFF;
 }
 
@@ -207,12 +216,11 @@ a i {
 /****** Info ***********/
 .info {
     display: flex;
-    margin-top: 30px;
     align-items: center;
     gap: 10px;
 }
 
-.info div {
+.info-icone {
     border :#D9D9D9 solid 1px;
     padding: 12px 10px;
     border-radius: 100px;
@@ -221,7 +229,6 @@ a i {
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    margin-top: 35px;
     display: flex;
     justify-content: space-between;
 }
@@ -241,14 +248,14 @@ a i {
     gap: 30px;
 }
 
-.lien-card{
-    width: 31%;
+.lien-card {
+    flex : 1;
 }
 
 .hebergements-cards {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    gap : 30px;
 }
 
 .hebergements-cards .card-subtitle {
@@ -342,7 +349,6 @@ a i {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 35px;
     padding: 30px;
 }
 
@@ -378,18 +384,19 @@ a i {
 footer{
     display: flex;
     background-color: var(--main-bg-color);
-    margin-top: 35px;
 }
 
 footer ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 33%;
-    padding: 0 20px;
+    padding: 0;
 }
 
-
+.footer-liste {
+    flex : 1;
+    padding: 20px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
