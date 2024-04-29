@@ -20,14 +20,12 @@ body {
 }
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
     padding: 0px 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 35px;
-
 }
 
 main {
@@ -41,11 +39,18 @@ a {
     text-decoration: none;
 }
 
+button, a {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 ul li {
     list-style: none;
 }
-
-
 
 .section-title {
     margin: 0;
@@ -92,19 +97,18 @@ header {
 nav ul {
     display: flex;
     gap: 68px;
-    margin-top: 0px;
 }
 
 nav ul a {
-    display: inline-block;
+    display: block;
     padding-top: 20px;
     border-top : 2px solid white;
 }
 
 .lien-hebergements a:hover, 
 .lien-activites a:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
 }
 
 /****** Recherches And Filtres ***********/
@@ -122,7 +126,7 @@ nav ul a {
 /****** Recherches ***********/
 form {
     display: flex;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--main-bg-color);
     border-radius: 15px;
     width: fit-content;
 }
@@ -134,7 +138,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
 }
 
 .fa-location-dot {
@@ -151,7 +155,7 @@ form input {
 }
 
 form button {
-    background-color: #0065FC;
+    background-color: var(--main-color);
     border-radius: 0px 15px 15px 0px;
     border: none ;
     padding: 15px 16px;
@@ -166,6 +170,7 @@ form button {
 .bouton-loupe {
     display: none;
 }
+
 /****** Filtres ***********/
 .filtres {
     display: flex;
@@ -199,7 +204,7 @@ h3 {
 }
 
 .filtres button:hover {
-    background-color: #DEEBFF;
+    background-color: var(--filter-bg-color);
 }
 
 a i {
@@ -219,7 +224,7 @@ a i {
 
 .info-icone {
     border :#D9D9D9 solid 1px;
-    padding: 12px 10px;
+    padding: 11px 10px;
     border-radius: 100px;
     display: inherit;
 }
@@ -246,12 +251,12 @@ a i {
 }
 
 .lien-card {
+    display: flex;
     flex : 1;
 }
 
 .hebergements-cards {
     display: flex;
-    justify-content: space-between;
     gap : 30px;
 }
 
@@ -263,6 +268,7 @@ a i {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .hebergements-cards img {
@@ -301,6 +307,11 @@ a i {
     justify-content: space-between;
     align-items: center;
 }
+
+.populaires-title i {
+    font-size: 17px;
+}
+
 .populaires-cards {
     display: flex;
     flex-direction: column;
@@ -357,8 +368,8 @@ a i {
 .activites-cards .card {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     padding: 0;
-    height: 100%;
 }
 
 .activites-cards img {
@@ -387,7 +398,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 0;
+    margin-top: 15px;
 }
 
 .footer-liste {
@@ -461,18 +472,18 @@ footer ul {
     }
     nav ul {
         gap: 0;
-        padding: 0;
-        margin: 0;
+        display: flex;
     }
 
     nav ul li {
         width: 100%;
+        flex: 1;
     }
 
     nav ul a {
         text-align: center;
         width: 100%;
-        display: inline-block;
+        display: block;
         padding-top: 0px;
         padding-bottom: 15px;
         border-top : hidden;
@@ -482,8 +493,8 @@ footer ul {
     .lien-hebergements a:hover, 
     .lien-activites a:hover {
         border-top: hidden;
-        border-bottom: 2px solid #0065FC;
-        color: #0065FC;
+        border-bottom: 2px solid var(--main-color);
+        color: var(--main-color);
     }
 
     .recherche-and-filtres {
@@ -494,9 +505,13 @@ footer ul {
     .bouton-rechercher {
         display: none;
     }
+
+    form {
+        width: initial;
+    }
     
     form input {
-        width: 235px;
+        width: 100%;
     }
 
     form button {
